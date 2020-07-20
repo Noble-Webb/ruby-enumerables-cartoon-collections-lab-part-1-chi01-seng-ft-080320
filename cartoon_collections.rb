@@ -9,8 +9,9 @@ end
 
 def list_dwarves(array)
   hash = Hash.new 
-  array.each_with_index do { |item, index| 
-  hash[item] = index
+  total = 0
+  array.each_with_index do { |item| 
+  hash[item] = array[total]
   } 
   end
   # Use `each_with_index` to enumerate over the provided array
